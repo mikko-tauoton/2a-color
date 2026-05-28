@@ -1142,12 +1142,27 @@ section { position: relative; }
      (after the -nav-height margin) is exactly the viewport — hero lead + wave +
      stats band all fit, with the band sitting on the very bottom edge. */
   .hero { height: calc(100vh + var(--nav-height)); height: calc(100dvh + var(--nav-height)); min-height: 0; }
-  .hero-body .container { padding-top: calc(var(--nav-height) * 2 + var(--space-sm)); padding-bottom: calc(var(--hero-wave-crest) + 50px); }
-  .hero-lead { max-width: 100%; gap: 1.1rem; }
-  .hero h1 { font-size: clamp(2rem, 10.5vw, 3.4rem); line-height: 0.96; max-width: 14ch; }
+  .hero-body .container { padding-top: calc(var(--nav-height) * 2 + var(--space-xs)); padding-bottom: calc(var(--hero-wave-crest) + 36px); }
+  .hero-lead { max-width: 100%; gap: 0.95rem; }
+  /* Bigger h1 that wraps naturally — accent is allowed to break to its own
+     line(s), brush hidden on mobile since it can't track multi-line wrap. */
+  .hero h1 { font-size: clamp(2.1rem, 10vw, 3.2rem); line-height: 1.04; max-width: 100%; letter-spacing: -0.028em; }
+  .hero-accent { white-space: normal; }
+  .hero-accent .brush-svg { display: none; }
+  .hero .eyebrow { font-size: 0.72rem; }
+  .hero-sub { font-size: 0.97rem; line-height: 1.45; max-width: 100%; margin-top: 0.15rem; }
+  .hero-ctas { gap: 0.7rem; margin-top: 0.2rem; width: 100%; }
+  .hero-ctas .btn-primary { padding: 0.95rem 1.3rem; font-size: 0.95rem; }
   /* taller wavy band on mobile: more room above the stats, stats stay pinned low */
-  .hero-foot-inner { flex-direction: column; align-items: flex-start; gap: 1.4rem; padding-top: var(--space-lg); }
-  .hero-stats { gap: 1.6rem; width: 100%; }
+  .hero-foot-inner { flex-direction: column; align-items: flex-start; gap: 1rem; padding-top: var(--space-md); padding-bottom: var(--space-sm); }
+  .hero-stats { gap: 1.1rem; width: 100%; align-items: flex-start; flex-direction: column; }
+  .google-badge { padding: 0.5rem 0.8rem; gap: 0.6rem; }
+  .google-badge-logo { width: 1.5rem; height: 1.5rem; }
+  .google-badge-value { font-size: 1.15rem; }
+  /* Promises stack one-per-row on mobile for cleaner scan */
+  .hero-promises { flex-direction: column; align-items: flex-start; gap: 0.55rem; width: 100%; }
+  .hero-promises li { font-size: 0.9rem; gap: 0.55rem; }
+  .hero-promises li svg { width: 10px; height: 10px; padding: 4px; }
   .hero-ctas .btn-ghost { background: transparent; border: none; padding: 0.4rem 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 7px; }
   .hero-ctas .btn-ghost::before { content: none; }
   .hero-ctas .btn-ghost svg { display: none; }

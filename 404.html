@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#18131B" />
+  <title>Sivua ei löytynyt | A-Color</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="assets/a-color-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .error-page {
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-2xl) var(--container-pad);
+      gap: 1.4rem;
+      background: var(--color-background);
+    }
+    .error-page h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      letter-spacing: -0.035em;
+      margin: 0;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-secondary);
+      font-weight: 500;
+    }
+    .error-page p {
+      max-width: 48ch;
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      margin: 0 auto;
+    }
+    .error-cta { margin-top: 0.5rem; display: inline-flex; }
+    .error-contact { margin-top: 1rem; font-size: 0.95rem; }
+    .error-contact a { color: var(--color-secondary); }
+  </style>
+</head>
+<body>
+
+  <nav id="nav" class="nav always-solid">
+    <div class="container">
+      <a class="nav-brand" href="/" aria-label="A-Color">
+        <img class="nav-brand-logo nav-logo-light" src="assets/a-color-logo-white.png" alt="A-Color" width="120" height="67" loading="eager" decoding="async" />
+        <img class="nav-brand-logo nav-logo-dark" src="assets/a-color-logo.png" alt="A-Color" width="120" height="67" loading="eager" decoding="async" />
+      </a>
+      <a class="nav-cta" href="/#tarjous">Pyydä tarjous</a>
+    </div>
+  </nav>
+
+  <main class="error-page">
+    <span class="error-code">404 · Sivua ei löytynyt</span>
+    <h1>Hupsis, tämä sivu on hukassa</h1>
+    <p>Hakemaasi sivua ei löytynyt. Linkki saattaa olla vanhentunut tai osoite on kirjoitettu väärin.</p>
+    <a href="/" class="btn-primary error-cta">Palaa etusivulle
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8 H13 M9 4 L13 8 L9 12"/></svg>
+    </a>
+    <p class="error-contact">Tai ota yhteyttä: <a href="tel:+358503576186">050 357 6186</a></p>
+  </main>
+
+</body>
+</html>

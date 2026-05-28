@@ -1,0 +1,5 @@
+# Pakota https
+http://a-color.fi/* https://a-color.fi/:splat 301!
+
+# Pakota non-www muoto
+https://www.a-color.fi/* https://a-color.fi/:splat 301!

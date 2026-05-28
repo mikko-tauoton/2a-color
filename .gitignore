@@ -30,24 +30,26 @@ YKSINKERTAINEN-HTML-OHJE.md
 a-color-tietoa.md
 
 # Vanhat referenssikuvat & raakatiedostot juuressa (assets/ on tuotantokansio)
-Google__G__logo.svg.png
-IMG_7267.jpg.webp
-Näyttökuva*.png
-P1166432.jpg
-P1166609.jpg
-P1166618.jpg
-Uusi-Hero-ideaa.png
-a-color-heron-taustavideo.mp4
-a-color-new-logo.png
-a-color-new-logo-white.png
-a-color-oldpage-desktop.png
-a-color-oldpage-mobile.png
-a-color-tekijät.svg
-asunnon-maalaukset-helsinki-espoo-vantaa-sipoo.jpg.webp
-heron-design-ideaa.jpg
-huonekalujen-maalaus.jpg
-lattian-maalaus.jpg
-paneelikaton-maalaus-helsinki-espoo-vantaa-sipoo.jpg
-paneelikattojen-maalaukset-helsinki-espoo-vantaa.jpg
-sisakaton-maalaus-espoo-a-color.jpg
-sisakaton-maalaus-helsinki-espoo-vantaa-sipoo.jpg.webp
+# HUOM: leading-slash ankkuroi patternit projektin juureen, jotta saman-
+# nimiset tiedostot assets/-kansiossa EIVÄT mene mukaan ignoreen.
+/Google__G__logo.svg.png
+/IMG_7267.jpg.webp
+/Näyttökuva*.png
+/P1166432.jpg
+/P1166609.jpg
+/P1166618.jpg
+/Uusi-Hero-ideaa.png
+/a-color-heron-taustavideo.mp4
+/a-color-new-logo.png
+/a-color-new-logo-white.png
+/a-color-oldpage-desktop.png
+/a-color-oldpage-mobile.png
+/a-color-tekijät.svg
+/asunnon-maalaukset-helsinki-espoo-vantaa-sipoo.jpg.webp
+/heron-design-ideaa.jpg
+/huonekalujen-maalaus.jpg
+/lattian-maalaus.jpg
+/paneelikaton-maalaus-helsinki-espoo-vantaa-sipoo.jpg
+/paneelikattojen-maalaukset-helsinki-espoo-vantaa.jpg
+/sisakaton-maalaus-espoo-a-color.jpg
+/sisakaton-maalaus-helsinki-espoo-vantaa-sipoo.jpg.webp
